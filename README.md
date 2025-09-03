@@ -1,4 +1,5 @@
 # Stealer Parsing Automation
+Collab with https://github.com/lawliet15me
 
 Repository ini menyediakan script Python untuk mengotomatisasi parsing data **stealer leaks** berdasarkan daftar subdomain.  
 Workflow-nya melibatkan 3 komponen utama:

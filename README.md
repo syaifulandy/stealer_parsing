@@ -21,16 +21,11 @@ Workflow-nya melibatkan 3 komponen utama:
 ---
 
 ## Struktur File
-
-.
 ├── list.txt # Daftar domain/subdomain (input utama)
 ├── stealer.txt # Dump data stealer (cred leaks)
 ├── stealerparsing.py # Script utama
 ├── parsingCredsLeak.py # (script parser eksternal - dipanggil otomatis)
 └── txt2csv-stealer.py # (script konversi eksternal - dipanggil otomatis)
-
-yaml
-Copy code
 
 ---
 

@@ -49,30 +49,19 @@ Format mengikuti kebutuhan script `parsingCredsLeak.py`.
 ### 4. Jalankan Script
 Default (pakai `list.txt` dan `stealer.txt`):
 ```bash
-python3 stealerparsing.py
-Custom file:
-
 python3 stealerparsing.py -l mylist.txt -f mystealer.txt
-Output
-subdomain.type-1.txt s/d subdomain.type-5.txt → hasil parsing per subdomain.
-⚠️ Otomatis dihapus setelah digabung.
-
-allsubdomain.txt → gabungan semua hasil type-1 s/d type-4.
-
-CSV Output → dihasilkan oleh txt2csv-stealer.py.
-
-Contoh Alur
-Isi list.txt dengan:
-a.example.com
-b.example.com
-Jalankan:
-python3 stealerparsing.py -l list.txt -f stealer.txt
 
 Script akan:
 1. Menjalankan parsingCredsLeak.py untuk a.example.com dan b.example.com.
 2. Menggabungkan hasil type-1..4 ke allsubdomain.txt.
 3. Menghapus semua file *.type-1.txt s/d *.type-5.txt.
 4. Menjalankan txt2csv-stealer.py untuk mengonversi ke CSV.
+
+Output
+1. subdomain.type-1.txt s/d subdomain.type-5.txt → hasil parsing per subdomain. ⚠️ Otomatis dihapus setelah digabung.
+2. allsubdomain.txt → gabungan semua hasil type-1 s/d type-4.
+3. CSV Output → dihasilkan oleh txt2csv-stealer.py.
+
 
 Catatan
 Script ini tidak akan berjalan tanpa parsingCredsLeak.py dan txt2csv-stealer.py. Pastikan keduanya tersedia.
